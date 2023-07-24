@@ -3,6 +3,14 @@
 
 package lib2 // 폴더 이름
 
+import (
+	"fmt"
+)
+
+func init() {
+	fmt.Println("Lib Init Method Start!")
+}
+
 func CheckNum1(c int32) bool { // 소문자가 되면 다른 곳에서 사용 불가
 	return c > 100
 }
